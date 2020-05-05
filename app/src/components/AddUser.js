@@ -25,7 +25,8 @@ const AddUser = props => {
                 props.setUsers([
                     ...props.users,
                     response.data
-                ]);
+                ])
+                setAddInput(initialState)
             })
             .catch(err => {
                 console.log({ err })
