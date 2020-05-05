@@ -1,10 +1,12 @@
 const express = require("express");
 const shortid = require("shortid");
+const cors = require("cors");
 
 const server = express();
 const port = 8000;
 
 server.use(express.json());
+server.use(cors());
 
 let data = [
     {
